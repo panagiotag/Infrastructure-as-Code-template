@@ -1,0 +1,20 @@
+# Pipeline template that defines common runtime environment variables.
+variables:
+  # Base name used for naming all the infrastructure resources
+  - name: BASE_NAME
+    value: mnist
+  # Location for resource provisioning
+  - name: LOCATION
+    value: westeurope
+  # Workspace name for the project
+  - name: WORKSPACE_NAME
+    value: mnistws
+  # Workspace SKU
+  - name: WORKSPACE_SKU
+    value: basic
+  # Resource group
+  - name: RESOURCE_GROUP
+    value: mnist
+  # Resource Manager Service Connection
+  - name: AZURE_RM_SVC_CONNECTION
+    value: Azure-ARM-Dev
